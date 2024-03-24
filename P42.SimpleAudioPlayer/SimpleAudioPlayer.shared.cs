@@ -8,7 +8,7 @@ namespace P42.SimpleAudioPlayer
 #if __ANDROID__
     [Android.Runtime.Preserve(AllMembers = true)]
 #endif
-    public class CrossSimpleAudioPlayer
+    public class Player
     {
       static readonly Lazy<ISimpleAudioPlayer> Implementation 
          = new Lazy<ISimpleAudioPlayer>(() => CreateSimpleAudioPlayer(), System.Threading.LazyThreadSafetyMode.PublicationOnly);
