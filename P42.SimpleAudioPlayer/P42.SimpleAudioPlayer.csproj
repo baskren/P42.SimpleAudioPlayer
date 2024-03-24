@@ -11,11 +11,6 @@
   <Import Project="Directory.Build.TargetPlatform.props" />
 
 
-  <ItemGroup>
-    <PackageReference Include="Uno.WinUI" Version="5.0.118" />
-  </ItemGroup>
-
-
   <Choose>
 
     <When Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">
